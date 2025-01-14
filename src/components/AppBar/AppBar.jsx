@@ -1,10 +1,14 @@
+import Logo from "../Logo/Logo.jsx";
 import Navigation from "../Navigation/Navigation";
 import css from "./AppBar.module.css";
 
 const AppBar = () => {
   return (
     <header className={css.header}>
-      <Navigation />
+      <Logo />
+      <div className={css.header_nav}>
+        <Navigation />
+      </div>
     </header>
   );
 };
