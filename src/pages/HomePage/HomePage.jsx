@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../../components/Button/Button.jsx";
 import Main from "../../components/Main/Main.jsx";
 import css from "./HomePage.module.css";
@@ -11,7 +12,11 @@ const Home = () => {
           <p className={css.text}>
             You can find everything you want in our catalog
           </p>
-          <Button className={css.btn}>View Now</Button>
+          <Link to="/catalog">
+            <Button className={css.btn} type={"button"}>
+              View Now
+            </Button>
+          </Link>
         </div>
       </div>
     </Main>

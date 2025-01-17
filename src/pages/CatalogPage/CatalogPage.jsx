@@ -1,8 +1,17 @@
-const Catalog = () => {
+import Catalog from "../../components/Catalog/Catalog.jsx";
+import Main from "../../components/Main/Main.jsx";
+import css from "./CatalogPage.module.css";
+
+const CatalogPage = () => {
   return (
-    <div>
-      <h1>Catalog</h1>
-    </div>
+    <Main className={css.catalog_page}>
+      <aside>
+        <h2>aside</h2>
+      </aside>
+      <section>
+        <Catalog />
+      </section>
+    </Main>
   );
 };
-export default Catalog;
+export default CatalogPage;

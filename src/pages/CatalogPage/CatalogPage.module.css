@@ -1,0 +1,4 @@
+.catalog_page {
+  display: flex;
+  justify-content: space-between;
+}
